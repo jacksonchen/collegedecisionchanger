@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Decision Changer",
+  "description": "Changes denials to acceptances and vise versa",
+  "version": "0.0.1",
+
+  "author": "Jackson Chen",
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*.edu/",
+    "https://*.edu/"
+  ],
+
+  "content_scripts": [ {
+    "js": [ "changer.js" ],
+    "matches": [ "http://*.edu/*",
+                 "https://*.edu/*" ]
+  }],
+
+  "icons": {
+    "128": "change.png"
+  }
+}
