@@ -17,15 +17,16 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 $(document).ready(function() {
   for (var i = 0; i < 3; i++) {
     setTimeout(function() {
-      console.log("pls work")
+      console.log("Updating college admissions decisions...");
       changeStuff();
     }, 5000);
   }
 })
 
 function changeStuff() {
-  $('body *').replaceText( /Accepted/g, 'Rejecteeeeed' );
-  $('body *').replaceText( /accepted/g, 'rejecteeeeed' );
+  $('body *').replaceText( /Accepted/g, 'Rejected' );
+  $('body *').replaceText( /accepted/g, 'rejected' );
   $('body *').replaceText( /admission/g, 'rejection' );
-  $('body *').replaceText( /admitted/g, 'rejecteeeeed' );
+  $('body *').replaceText( /admitted/g, 'rejected' );
+  $('body *').replaceText( /acceptance/g, 'rejection' );
 }
